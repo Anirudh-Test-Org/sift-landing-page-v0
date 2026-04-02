@@ -21,7 +21,7 @@ const platforms = [
   },
   {
     name: "Hotstar",
-    logo: "/logos/hotstar_wordmark.jpg",
+    logo: "/logos/hotstar_wordmark.png",
     url: "https://www.hotstar.com",
   },
   {
@@ -41,11 +41,11 @@ export function PlatformsSection() {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mb-12 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Works where you watch
           </h2>
 
-          <div className="flex flex-wrap items-center justify-center gap-12">
+          <div className="grid grid-cols-1 items-center justify-items-center gap-12 sm:grid-cols-3 md:grid-cols-4">
             {platforms.map((platform) => (
               <a
                 key={platform.name}
