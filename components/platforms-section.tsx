@@ -1,11 +1,39 @@
 const platforms = [
-  { name: "Netflix", logo: "/logos/netflix_wordmark.jpg", url: "https://www.netflix.com" },
-  { name: "Amazon Prime Video", logo: "/logos/amazonprimevideo_wordmark.svg", url: "https://www.primevideo.com" },
-  { name: "YouTube Movies", logo: "/logos/youtube.svg", url: "https://www.youtube.com/movies" },
-  { name: "Apple TV+", logo: "/logos/appletv_wordmark.svg", url: "https://tv.apple.com" },
-  { name: "Hotstar", logo: "/logos/hotstar_wordmark.jpg", url: "https://www.hotstar.com" },
-  { name: "SonyLIV", logo: "/logos/sonyliv_wordmark.png", url: "https://www.sonyliv.com" },
-  { name: "Crunchyroll", logo: "/logos/crunchyroll_wordmark.svg", url: "https://www.crunchyroll.com" },
+  {
+    name: "Netflix",
+    logo: "/logos/netflix_wordmark.svg",
+    url: "https://www.netflix.com",
+  },
+  {
+    name: "Amazon Prime Video",
+    logo: "/logos/amazonprimevideo_wordmark.svg",
+    url: "https://www.primevideo.com",
+  },
+  {
+    name: "YouTube Movies",
+    logo: "/logos/youtube_wordmark.png",
+    url: "https://www.youtube.com/movies",
+  },
+  {
+    name: "Apple TV+",
+    logo: "/logos/appletv_wordmark.svg",
+    url: "https://tv.apple.com",
+  },
+  {
+    name: "Hotstar",
+    logo: "/logos/hotstar_wordmark.jpg",
+    url: "https://www.hotstar.com",
+  },
+  {
+    name: "SonyLIV",
+    logo: "/logos/sonyliv_wordmark.png",
+    url: "https://www.sonyliv.com",
+  },
+  {
+    name: "Crunchyroll",
+    logo: "/logos/crunchyroll_wordmark.svg",
+    url: "https://www.crunchyroll.com",
+  },
 ];
 
 export function PlatformsSection() {
@@ -13,11 +41,11 @@ export function PlatformsSection() {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             Works where you watch
           </h2>
 
-          <div className="flex flex-wrap items-center justify-center gap-24">
+          <div className="flex flex-wrap items-center justify-center gap-12">
             {platforms.map((platform) => (
               <a
                 key={platform.name}
@@ -30,7 +58,7 @@ export function PlatformsSection() {
                 <img
                   src={platform.logo}
                   alt={platform.name}
-                  className="h-20 w-auto"
+                  className="h-16 w-auto"
                 />
               </a>
             ))}
