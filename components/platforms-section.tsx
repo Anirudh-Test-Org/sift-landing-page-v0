@@ -18,9 +18,10 @@ export function PlatformsSection() {
             Works where you watch
           </h2>
           <p className="mb-12 text-lg text-muted-foreground">
-            Sift supports Netflix, Prime Video, Disney+, Apple TV+, and major Indian OTT platforms
+            Sift supports Netflix, Prime Video, Disney+, Apple TV+, and major
+            Indian OTT platforms
           </p>
-          
+
           <div className="flex flex-wrap items-center justify-center gap-4">
             {platforms.map((platform) => (
               <div

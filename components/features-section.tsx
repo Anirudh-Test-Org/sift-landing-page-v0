@@ -10,22 +10,26 @@ const features: {
   {
     icon: Star,
     title: "Instant Ratings",
-    description: "IMDB ratings appear directly next to movie and TV show tiles as you browse. No extra clicks needed.",
+    description:
+      "IMDB ratings appear directly next to movie and TV show tiles as you browse. No extra clicks needed.",
   },
   {
     icon: ExternalLink,
     title: "Quick Access to IMDB",
-    description: "Click any rating to open the full IMDB page in a new tab for reviews, cast info, and more.",
+    description:
+      "Click any rating to open the full IMDB page in a new tab for reviews, cast info, and more.",
   },
   {
     icon: Code2,
     title: "Open Source",
-    description: "Fully transparent codebase. Review it, contribute to it, or fork it on GitHub.",
+    description:
+      "Fully transparent codebase. Review it, contribute to it, or fork it on GitHub.",
   },
   {
     icon: ShieldCheck,
     title: "Privacy First",
-    description: "No user data collected by default. Opt-in to error reporting if you choose.",
+    description:
+      "No user data collected by default. Opt-in to error reporting if you choose.",
     link: "/privacy",
   },
 ];
@@ -43,7 +47,7 @@ export function FeaturesSection() {
               Everything you need to make better viewing decisions
             </p>
           </div>
-          
+
           <div className="grid gap-8 md:grid-cols-2">
             {features.map((feature) => (
               <div
@@ -56,9 +60,7 @@ export function FeaturesSection() {
                 <h3 className="mb-2 text-xl font-semibold text-foreground">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
-                  {feature.description}
-                </p>
+                <p className="text-muted-foreground">{feature.description}</p>
                 {feature.link && (
                   <Link
                     href={feature.link}

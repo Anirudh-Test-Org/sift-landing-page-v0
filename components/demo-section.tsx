@@ -10,10 +10,11 @@ export function DemoSection() {
               See it in action
             </h2>
             <p className="text-lg text-muted-foreground">
-              Watch how Sift seamlessly adds IMDB ratings to your favorite streaming platforms
+              Watch how Sift seamlessly adds IMDB ratings to your favorite
+              streaming platforms
             </p>
           </div>
-          
+
           <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
             <div className="aspect-video">
               <iframe

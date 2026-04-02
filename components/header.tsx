@@ -34,7 +34,7 @@ export function Header() {
           />
           <span className="text-xl font-bold text-foreground">Sift</span>
         </Link>
-        
+
         <nav className="hidden items-center gap-6 md:flex">
           <Link
             href="/#features"
@@ -55,7 +55,7 @@ export function Header() {
             Privacy
           </Link>
         </nav>
-        
+
         <div className="flex items-center gap-2">
           <Button
             variant="ghost"

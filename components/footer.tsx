@@ -11,7 +11,7 @@ export function Footer() {
             </div>
             <span className="text-lg font-semibold text-foreground">Sift</span>
           </div>
-          
+
           <div className="flex items-center gap-1 text-sm text-muted-foreground">
             Made with <Heart className="h-4 w-4 fill-red-500 text-red-500" /> by{" "}
             <a
@@ -21,7 +21,7 @@ export function Footer() {
               Anirudh
             </a>
           </div>
-          
+
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/ackinc/webext-movie-ratings"
@@ -34,7 +34,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        
+
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
             IMDB ratings powered by the{" "}
