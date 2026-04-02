@@ -12,14 +12,19 @@ export function Footer() {
             <span className="text-lg font-semibold text-foreground">Sift</span>
           </div>
 
-          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            Made with <Heart className="h-4 w-4 fill-red-500 text-red-500" /> by{" "}
-            <a
-              href="mailto:anirudh.nimmagadda@gmail.com"
-              className="font-medium text-foreground hover:text-accent transition-colors"
-            >
-              Anirudh
-            </a>
+          <div className="text-center text-sm text-muted-foreground">
+            <p>
+              IMDB ratings powered by the{" "}
+              <a
+                href="https://www.patreon.com/join/omdb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground hover:text-accent transition-colors"
+              >
+                OMDB API
+              </a>
+              . Consider supporting the project!
+            </p>
           </div>
 
           <div className="flex items-center gap-4">
@@ -33,21 +38,6 @@ export function Footer() {
               <span>Source Code</span>
             </a>
           </div>
-        </div>
-
-        <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>
-            IMDB ratings powered by the{" "}
-            <a
-              href="https://www.patreon.com/join/omdb"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground hover:text-accent transition-colors"
-            >
-              OMDB API
-            </a>
-            . Consider supporting the project!
-          </p>
         </div>
       </div>
     </footer>
