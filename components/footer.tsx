@@ -6,9 +6,11 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-accent-foreground font-bold text-sm">
-              S
-            </div>
+            <img
+              src="logo128.png"
+              alt="Sift logo"
+              className="h-8 w-8 rounded-lg"
+            />
             <span className="text-lg font-semibold text-foreground">Sift</span>
           </div>
 
