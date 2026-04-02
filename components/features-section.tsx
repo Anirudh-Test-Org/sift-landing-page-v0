@@ -6,6 +6,7 @@ const features: {
   title: string;
   description: string;
   link?: string;
+  linkText?: string;
 }[] = [
   {
     icon: Star,
@@ -24,6 +25,8 @@ const features: {
     title: "Open Source",
     description:
       "Fully transparent codebase. Review it, contribute to it, or fork it on GitHub.",
+    link: "https://github.com/ackinc/webext-movie-ratings",
+    linkText: "Source code",
   },
   {
     icon: ShieldCheck,
@@ -66,7 +69,7 @@ export function FeaturesSection() {
                     href={feature.link}
                     className="mt-3 inline-flex items-center text-sm font-medium text-accent hover:underline"
                   >
-                    Learn more
+                    {feature.linkText ?? "Learn more"}
                     <ExternalLink className="ml-1 h-3 w-3" />
                   </Link>
                 )}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { Github, Sun, Moon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 import { getTimeBasedTheme } from "@/components/theme-provider";
 
 export function Header() {
@@ -69,16 +69,6 @@ export function Header() {
             ) : (
               <Moon className="h-4 w-4" />
             )}
-          </Button>
-          <Button variant="ghost" size="sm" className="gap-2" asChild>
-            <a
-              href="https://github.com/ackinc/webext-movie-ratings"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="h-4 w-4" />
-              <span className="hidden sm:inline">GitHub</span>
-            </a>
           </Button>
         </div>
       </div>
