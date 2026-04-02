@@ -3,7 +3,11 @@ import { Ubuntu } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-ubuntu" });
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-ubuntu",
+});
 
 export const metadata: Metadata = {
   title: "Sift - IMDB Ratings on Netflix, Prime Video & More",
